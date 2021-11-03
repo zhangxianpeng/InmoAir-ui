@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.inmo.network.AndroidNetworking
 import com.inmo.network.error.ANError
 import com.inmo.network.interfaces.JSONObjectRequestListener
+import com.inmo.util.NetWorkUtil
 import kotlinx.android.synthetic.main.activity_network.*
 import org.json.JSONObject
 
@@ -14,8 +15,23 @@ class NetworkActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_network)
+        checkNetwork()
         btn_get.setOnClickListener { doGet() }
         btn_post.setOnClickListener { doPost() }
+    }
+
+    private fun checkNetwork() {
+        val url = "www.baidu.com"
+        NetWorkUtil.isNetWorkAvailable(url, object : Comparable<Boolean> {
+            override fun compareTo(available: Boolean): Int {
+                if (available) {
+                    Log.e(TAG, "正常")
+                } else {
+                    Log.e(TAG, "不正常")
+                }
+                return 0
+            }
+        })
     }
 
     private fun doGet() {
