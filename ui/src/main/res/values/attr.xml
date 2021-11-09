@@ -11,4 +11,12 @@
         <attr name="preSuffix" format="string" />
         <attr name="textVisibility" format="boolean" />
     </declare-styleable>
+
+    <declare-styleable name="CornerImageView">
+        <attr name="radius" format="dimension" />
+        <attr name="left_top_radius" format="dimension" />
+        <attr name="right_top_radius" format="dimension" />
+        <attr name="right_bottom_radius" format="dimension" />
+        <attr name="left_bottom_radius" format="dimension" />
+    </declare-styleable>
 </resources>
