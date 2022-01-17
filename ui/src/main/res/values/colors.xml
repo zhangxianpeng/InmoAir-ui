@@ -7,4 +7,19 @@
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBlack">#000000</color>
     <color name="transparent">#00000000</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="card_random_color1">#FFF55951</color>
+    <color name="card_random_color2">#FFFFB529</color>
+    <color name="card_random_color3">#FFFFD735</color>
+    <color name="card_random_color4">#FF55CF5E</color>
+    <color name="card_random_color5">#FF3485FF</color>
+    <color name="card_random_color6">#FF3CB5EE</color>
+    <color name="card_random_color7">#FF48D6D2</color>
+    <color name="card_random_color8">#FFA862EA</color>
+
+    <color name="cFFE8E8E8">#FFE8E8E8</color>
+    <color name="text_color1">#99000000</color>
 </resources>

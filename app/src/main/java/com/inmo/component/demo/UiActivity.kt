@@ -1,8 +1,9 @@
-package com.inmo.component
+package com.inmo.component.demo
 
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import com.inmo.component.R
 import kotlinx.android.synthetic.main.activity_ui.*
 
 class UiActivity : AppCompatActivity() {
@@ -15,8 +16,6 @@ class UiActivity : AppCompatActivity() {
     }
 
     private fun initView() {
-        switch_btn.setOnSwitchListener { _, isOn ->
-            Log.e(TAG, "isOn =$isOn")
-        }
+
     }
 }

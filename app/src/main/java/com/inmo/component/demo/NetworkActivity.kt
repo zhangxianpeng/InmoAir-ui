@@ -1,8 +1,9 @@
-package com.inmo.component
+package com.inmo.component.demo
 
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import com.inmo.component.R
 import com.inmo.network.AndroidNetworking
 import com.inmo.network.error.ANError
 import com.inmo.network.interfaces.JSONObjectRequestListener

@@ -1,24 +1,8 @@
 package com.inmo.component
 
-import android.content.Intent
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        addConfirmCancelDialogBelowProgress()
-        btn_ui.setOnClickListener {
-            val intent = Intent(this, UiActivity::class.java)
-            startActivity(intent)
-        }
-        btn_net.setOnClickListener {
-            val intent = Intent(this, NetworkActivity::class.java)
-            startActivity(intent)
-        }
-    }
+class MainActivity1 {
+
 
     private fun addConfirmCancelDialogBelowProgress() {
         // ConfirmCancelDialog

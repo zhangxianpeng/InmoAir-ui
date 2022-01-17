@@ -12,17 +12,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".NetworkActivity"
+            android:name=".demo.LoadingViewActivity"
             android:exported="true" />
         <activity
-            android:name=".UiActivity"
+            android:name=".demo.ConfirmCancelDialogTestActivity"
+            android:exported="true" />
+        <activity
+            android:name=".demo.IconConfirmCancelDialogTestActivity"
+            android:exported="true" />
+        <activity
+            android:name=".demo.NetworkActivity"
+            android:exported="true" />
+        <activity
+            android:name=".demo.UiActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

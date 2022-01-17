@@ -52,4 +52,6 @@ dependencies {
 
     // kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    // 工具类库
+    implementation 'com.blankj:utilcodex:1.31.0'
 }
