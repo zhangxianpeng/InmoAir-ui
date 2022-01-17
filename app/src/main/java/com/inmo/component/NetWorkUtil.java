@@ -1,4 +1,4 @@
-package com.inmo.util;
+package com.inmo.component;
 
 import android.os.Handler;
 import android.os.Message;
