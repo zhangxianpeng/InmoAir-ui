@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <declare-styleable name="CommonProgressBar">
         <attr name="reachedBarColor" format="color" />
         <attr name="unreachedBarColor" format="color" />

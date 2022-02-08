@@ -10,6 +10,10 @@ import androidx.annotation.Nullable;
 
 import com.inmo.ui.R;
 
+/**
+ * @author Administrator
+ * 菊花进度展示弹窗
+ */
 public class LoadingView extends androidx.appcompat.widget.AppCompatImageView {
     AnimationDrawable animationDrawable;
 
