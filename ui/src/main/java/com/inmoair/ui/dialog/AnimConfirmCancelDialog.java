@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -22,24 +23,37 @@ import com.inmoair.ui.R;
  * @date 2021-11-02
  */
 public class AnimConfirmCancelDialog extends Dialog {
-
+    MotionLayout mlDelete;
     ImageView mIconImageView;
     TextView mLeftTextView;
     String leftString;
     TextView mRightTextView;
     String rightString;
     TextView mTitleTextView;
-    boolean isShowIcon;
+    TextView mMsgTextView;
+    int layoutId = -1;
 
-    public AnimConfirmCancelDialog(@NonNull Context context, boolean isShowIcon) {
+    public AnimConfirmCancelDialog(@NonNull Context context, int layoutId) {
         super(context, R.style.ConfirmCancelDialog);
-        this.isShowIcon = isShowIcon;
+        this.layoutId = layoutId;
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(isShowIcon ? R.layout.layout_dialog_comfirm_cancel_icon : R.layout.layout_dialog_comfirm_cancel_no_icon);
+        switch (layoutId) {
+            case 0:
+                setContentView(R.layout.layout_dialog_comfirm_cancel_no_icon);
+                break;
+            case 1:
+                setContentView(R.layout.layout_dialog_comfirm_cancel_icon);
+                break;
+            case 2:
+                setContentView(R.layout.layout_dialog_comfirm_cancel);
+                break;
+            default:
+                break;
+        }
         setCanceledOnTouchOutside(false);
         initView();
     }
@@ -62,7 +76,22 @@ public class AnimConfirmCancelDialog extends Dialog {
         }
     }
 
+    public void setMiddleMsg(String middleMsg) {
+        if (mMsgTextView != null && !TextUtils.isEmpty(middleMsg)) {
+            mMsgTextView.setText(middleMsg);
+        }
+    }
+
+    @Override
+    public boolean dispatchTouchEvent(@NonNull MotionEvent ev) {
+        if (mlDelete!=null){
+            return mlDelete.onTouchEvent(ev);
+        }
+        return true;
+    }
+
     private void initView() {
+        mlDelete = findViewById(R.id.mlDelete);
         mLeftTextView = findViewById(R.id.tvCancel);
         mRightTextView = findViewById(R.id.tvDelete);
         mIconImageView = findViewById(R.id.ivAppIcon);

@@ -5,7 +5,6 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 
 import com.inmoair.ui.dialog.AnimConfirmCancelDialog;
-import com.inmoair.ui.toast.AirToast;
 
 /**
  * @author Administrator
@@ -25,7 +24,7 @@ public class MainActivity extends BaseActivity {
 
     private void showAnimDialog() {
         if (mConfirmCancelDialog == null) {
-            mConfirmCancelDialog = new AnimConfirmCancelDialog(MainActivity.this, true);
+            mConfirmCancelDialog = new AnimConfirmCancelDialog(MainActivity.this, 2);
         }
 
         if (mConfirmCancelDialog.isShowing()) {
@@ -33,7 +32,8 @@ public class MainActivity extends BaseActivity {
         }
         mConfirmCancelDialog.setBtnText("取消", "确认");
         mConfirmCancelDialog.show();
-        mConfirmCancelDialog.setTitle("确定把当前选中的9张美美照片同步到手机吗确定把当前选中的9张美美照片同步到手机?");
+        mConfirmCancelDialog.setTitle("是否恢复出场设置?");
+        mConfirmCancelDialog.setMiddleMsg("清除的数据无法还原，请谨慎操作");
         mConfirmCancelDialog.setOnScrollListener(new AnimConfirmCancelDialog.OnScrollListener() {
 
             @Override
