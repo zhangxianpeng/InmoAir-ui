@@ -30,6 +30,10 @@ android {
             outputFileName = "INMO-Air-CommonDemo-V${variant.versionName}-T${releaseTime()}.apk"
         }
     }
+
+    dataBinding {
+        enabled = true
+    }
 }
 
 def releaseTime() {

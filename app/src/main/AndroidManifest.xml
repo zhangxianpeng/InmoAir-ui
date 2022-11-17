@@ -3,34 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.inmo.component">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
-        android:name=".MyApp"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
-        tools:ignore="GoogleAppIndexingWarning">
-        <activity
-            android:name=".demo.LoadingViewActivity"
-            android:exported="true" />
-        <activity
-            android:name=".demo.ConfirmCancelDialogTestActivity"
-            android:exported="true" />
-        <activity
-            android:name=".demo.IconConfirmCancelDialogTestActivity"
-            android:exported="true" />
-        <activity
-            android:name=".demo.NetworkActivity"
-            android:exported="true" />
-        <activity
-            android:name=".demo.UiActivity"
-            android:exported="true" />
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:targetApi="m">
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
             android:screenOrientation="landscape"
             android:theme="@style/AppTheme">
             <intent-filter>

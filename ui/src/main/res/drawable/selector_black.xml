@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item android:drawable="@drawable/bg_home_transparent" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/bg_home_transparent" android:state_pressed="false"></item>
+
+
+    <item android:drawable="@drawable/bg_home_transparent" android:state_accelerated="true"></item>
+    <item android:drawable="@drawable/bg_home_transparent" android:state_accelerated="false"></item>
+
+
+    <item android:drawable="@drawable/bg_home_transparent" android:state_active="true"></item>
+    <item android:drawable="@drawable/bg_home_transparent" android:state_active="false"></item>
+
+
+    <item android:drawable="@drawable/bg_home_transparent" android:state_checkable="true"></item>
+    <item android:drawable="@drawable/bg_home_transparent" android:state_checkable="false"></item>
+
+
+    <item android:drawable="@drawable/bg_home_transparent" android:state_checked="true"></item>
+    <item android:drawable="@drawable/bg_home_transparent" android:state_checked="false"></item>
+
+
+    <item android:drawable="@drawable/bg_home_transparent" android:state_drag_can_accept="true"></item>
+    <item android:drawable="@drawable/bg_home_transparent" android:state_drag_can_accept="false"></item>
+
+
+    <item android:drawable="@drawable/bg_home_transparent" android:state_activated="true"></item>
+    <item android:drawable="@drawable/bg_home_transparent" android:state_activated="false"></item>
+
+
+    <item android:drawable="@drawable/bg_home_transparent" android:state_drag_hovered="true"></item>
+    <item android:drawable="@drawable/bg_home_transparent" android:state_drag_hovered="false"></item>
+
+
+    <item android:drawable="@drawable/bg_home_transparent" android:state_enabled="true"></item>
+    <item android:drawable="@drawable/bg_home_transparent" android:state_enabled="false"></item>
+
+
+    <item android:drawable="@drawable/bg_home_transparent" android:state_first="true"></item>
+    <item android:drawable="@drawable/bg_home_transparent" android:state_first="false"></item>
+
+
+    <item android:drawable="@drawable/bg_home_transparent" android:state_focused="true"></item>
+    <item android:drawable="@drawable/bg_home_transparent" android:state_focused="false"></item>
+
+
+    <item android:drawable="@drawable/bg_home_transparent" android:state_hovered="true"></item>
+    <item android:drawable="@drawable/bg_home_transparent" android:state_hovered="false"></item>
+
+
+    <item android:drawable="@drawable/bg_home_transparent" android:state_last="true"></item>
+    <item android:drawable="@drawable/bg_home_transparent" android:state_last="false"></item>
+
+
+    <item android:drawable="@drawable/bg_home_transparent" android:state_middle="true"></item>
+    <item android:drawable="@drawable/bg_home_transparent" android:state_middle="false"></item>
+
+
+    <item android:drawable="@drawable/bg_home_transparent" android:state_selected="true"></item>
+    <item android:drawable="@drawable/bg_home_transparent" android:state_selected="false"></item>
+
+
+    <item android:drawable="@drawable/bg_home_transparent" android:state_single="true"></item>
+    <item android:drawable="@drawable/bg_home_transparent" android:state_single="false"></item>
+
+
+    <item android:drawable="@drawable/bg_home_transparent" android:state_window_focused="true"></item>
+    <item android:drawable="@drawable/bg_home_transparent" android:state_window_focused="false"></item>
+
+</selector>
